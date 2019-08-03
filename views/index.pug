@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  input(id = "inp", type="text", name="userinput")
+  button(type="button", onclick="clickGuess()") Guess
+  p(id = "display")
+  script
+    include ../public/javascripts/index.js
